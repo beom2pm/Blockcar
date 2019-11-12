@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_1"
+        android:background="#5882FA"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_gas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주유 기록"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:background="#00ff0000"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_repair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정비 기록"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:background="#00ff0000"/>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btn_accident"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사고 기록"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:background="#00ff0000"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:src="@drawable/center"
+            android:ems="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/center_img"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/center_edt"
+            android:textSize="25dp"
+            android:text="일반수리"
+            android:layout_toRightOf="@+id/center_img"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/center_mode"
+            android:textSize="15dp"
+            android:text="정비소"
+            android:layout_toRightOf="@+id/center_edt"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/address_edt"
+            android:textSize="15dp"
+            android:text="서울 이촌1동"
+            android:layout_toRightOf="@+id/center_img"
+            android:layout_below="@+id/center_edt"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/center_cost"
+            android:textSize="18dp"
+            android:text="3000"
+            android:layout_toRightOf="@+id/address_edt"
+            android:layout_below="@+id/center_edt"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/center_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address_edt"
+            android:layout_toRightOf="@+id/center_img"
+            android:background="#DAD8D8"
+            android:padding="30dp"
+            android:text="정비소 서비스 친절"
+            android:textSize="17dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/fixs" />
+
+    </RelativeLayout>
+
+</LinearLayout>

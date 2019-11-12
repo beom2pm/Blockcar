@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        app:srcCompat="@drawable/human" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/profile_img"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="70dp"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:text="블 록 카" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginLeft="77dp"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_marginTop="39dp"
+        android:background="#5882FA"
+        android:textColor="#ffffff"
+        android:text="edit"
+
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/profile_img"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:text="beom2pm" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="20dp"
+        android:textSize="13dp"
+        android:text="비밀번호변경" />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20dp">
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textSize="10dp"
+        android:layout_marginLeft="30dp"
+        android:background="#5882FA"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ffffff"
+        android:text="로그아웃" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:background="#5882FA"
+        android:text="내 차 등록"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="10dp" />
+
+
+    <Button
+        android:id="@+id/withdraw_btn"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:textSize="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:background="#5882FA"
+        android:text="회원탈퇴"
+        android:textColor="#ffffff" />
+</RelativeLayout>t>
+
+</LinearLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:background="#ffffff">
+
+        <TextView
+            android:id="@+id/car_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="25dp"
+            android:text="S-클래스 W221"
+            android:textColor="#4B4B4B"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/main_car"
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_below="@+id/car_name"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/racing" />
+
+        <TextView
+            android:id="@+id/recent_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_car"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:text="최근기록"
+            android:textColor="#4B4B4B"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/car_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_name"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="50dp"
+            android:text="붕붕이"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_name2"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:text="누적주행거리 :"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_name2"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/textView8"
+            android:text="50 Km"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/history_of_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:text="차 기록 보기"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/history_of_car"
+            android:text="차 정보 수정"
+            android:textSize="13dp" />
+    </RelativeLayout>
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+           android:orientation="horizontal"
+           android:layout_weight="2"
+           android:background="#ffffff"
+           tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/house"
+           />
+
+        <ImageView
+            android:id="@+id/gas_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            app:srcCompat="@drawable/oil" />
+        <ImageView
+            android:id="@+id/accident_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/car_icon" />
+
+        <ImageButton
+            android:id="@+id/repair_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/setting" />
+
+        <ImageView
+            android:id="@+id/setting_button"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            app:srcCompat="@drawable/fix" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/home_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="홈"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/gas_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="주유기록" />
+
+        <TextView
+            android:id="@+id/accident_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="사고기록" />
+
+        <TextView
+            android:id="@+id/repair_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="정비기록" />
+
+        <TextView
+            android:id="@+id/setting_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:hint="설정" />
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

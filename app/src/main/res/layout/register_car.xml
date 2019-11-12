@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="차량등록"
+                android:textSize="30dp"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/car_make_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="30dp"
+                android:text="차량 제조사"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_make_tv"
+                android:layout_marginLeft="53dp"
+                android:layout_below="@+id/text1"
+                android:layout_marginTop="25dp"
+                android:hint="차량제조사를 입력하세요"
+                android:id="@+id/car_make_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_model_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_make_tv"
+                android:layout_marginTop="30dp"
+                android:text="차             종"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_model_tv"
+                android:layout_marginLeft="53dp"
+                android:layout_below="@+id/car_make_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차량모델을 입력하세요"
+                android:id="@+id/car_model_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_color_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_model_tv"
+                android:layout_marginTop="30dp"
+                android:text="색             상"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_color_tv"
+                android:layout_marginLeft="53dp"
+                android:layout_below="@+id/car_model_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차량 색상을 입력하세요"
+                android:id="@+id/car_color_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_number_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_color_tv"
+                android:layout_marginTop="30dp"
+                android:text="차  량  번  호"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_number_tv"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/car_color_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차량번호를 입력하세요"
+                android:id="@+id/car_number_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_onlyNum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_number_tv"
+                android:layout_marginTop="30dp"
+                android:text="차  대  번  호"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_onlyNum_tv"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/car_number_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차대번호를 입력하세요"
+                android:id="@+id/car_onlyNum_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_year_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_onlyNum_tv"
+                android:layout_marginTop="30dp"
+                android:text="연             식"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/car_color_tv"
+                android:layout_marginLeft="53dp"
+                android:layout_below="@+id/car_onlyNum_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차량연식을 입력하세요"
+                android:id="@+id/car_year_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_content_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_year_tv"
+                android:layout_marginTop="30dp"
+                android:text="차  량  설  명"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_content_tv"
+                android:layout_marginTop="25dp"
+                android:hint="차량설명을 입력하세요(250자 이내)"
+                android:id="@+id/car_content_edt"
+                />
+
+            <TextView
+                android:id="@+id/car_img_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_content_edt"
+                android:layout_marginTop="30dp"
+                android:text="차량사진추가"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/car_img_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#00ff0000"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_image" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/car_img_tv"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/image1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_image"/>
+
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:background="#00ff0000"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/car_img_tv"
+                android:layout_marginLeft="30dp"
+                android:layout_toLeftOf="@+id/image1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_image"/>
+
+            <Button
+                android:id="@+id/complete_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image1"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/button_shape"
+                android:text="차량등록완료"
+                android:textColor="#FFFF"
+                android:textSize="27dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

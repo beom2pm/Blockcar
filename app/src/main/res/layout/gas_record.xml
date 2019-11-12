@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gas_Record">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="#5882FA">
+
+            <TextView
+                android:id="@+id/accident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="주유 기록"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accident"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/accident"
+                android:background="#00ff0000"
+                android:src="@drawable/arrow" />
+
+            <Button
+                android:id="@+id/complete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="#00ff0000"
+                android:text="완료"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints"
+            >
+
+            <ImageView
+                android:id="@+id/gas_station_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:ems="1"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/location_pin"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gas_station_text"
+                android:layout_toRightOf="@+id/gas_station_img"
+                android:hint="주유 장소를 입력하세요."
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:ems="17"
+                android:layout_marginTop="25dp"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gas_station_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="68dp"
+                android:text="위치 변경" />
+            <View
+                android:id="@+id/line1"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+
+
+            <ImageButton
+                android:id="@+id/location_arrow"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_below="@+id/gas_station_text"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/a"
+
+
+                />
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/car"
+                android:id="@+id/km_img"
+                android:layout_below="@+id/line1"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/km_text"
+                android:layout_toRightOf="@+id/gas_station_img"
+                android:text="누적주행거리"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/km_count_text"
+                android:layout_toRightOf="@+id/km_text"
+                android:text="1799"
+                android:layout_marginLeft="75dp"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/km_count_text"
+                android:text="km"
+                android:layout_marginLeft="15dp"
+                android:textSize="23dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line1"
+                />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/km_img"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/gas"
+                android:id="@+id/gas_img"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gas_cost"
+                android:layout_toRightOf="@+id/gas_img"
+                android:text="주유금액"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line2"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line2"
+                android:layout_toRightOf="@+id/gas_cost"
+                android:layout_marginLeft="10dp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gas_cost"
+                android:text="￦"
+                android:layout_marginLeft="200dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line2"
+                />
+            <View
+                android:id="@+id/line3"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/gas_img"
+                android:layout_toRightOf="@+id/gas_img"
+                android:layout_marginLeft="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gas_category"
+                android:layout_toRightOf="@+id/gas_img"
+                android:text="고급유"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line3"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line3"
+                android:layout_toRightOf="@+id/gas_category"
+                android:layout_marginLeft="30dp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gas_category"
+                android:text="￦"
+                android:layout_marginLeft="220dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line3"
+                />
+            <View
+                android:id="@+id/line4"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/gas_category"
+                android:layout_toRightOf="@+id/gas_img"
+                android:layout_marginLeft="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gas_amount"
+                android:layout_toRightOf="@+id/gas_img"
+                android:text="주유량"
+                android:layout_marginLeft="15dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line4"
+                />
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/line4"
+                android:layout_toRightOf="@+id/gas_amount"
+                android:layout_marginLeft="30dp"
+                android:ems="8"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/gas_amount"
+                android:text="L"
+                android:layout_marginLeft="223dp"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/line4"
+                />
+            <View
+                android:id="@+id/line5"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/gas_amount"
+                android:layout_toRightOf="@+id/gas_img"
+                android:layout_marginLeft="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/memo"
+                android:id="@+id/memo_img"
+                android:layout_below="@+id/line5"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="메모, 특이사항
+            (250자 이내, 이모티콘 불가)
+"
+                android:ems="10"
+                android:layout_toRightOf="@+id/memo_img"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/line5"
+                android:layout_marginTop="10dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="#5882FA">
+
+            <TextView
+                android:id="@+id/accident"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="사고 기록"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/accident"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/select_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="17dp"
+                android:layout_toRightOf="@id/accident"
+                android:background="#00ff0000"
+                android:src="@drawable/arrow" />
+
+            <Button
+                android:id="@+id/complete_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:background="#00ff0000"
+                android:text="완료"
+                android:textColor="#FFFFFF"
+                android:textSize="17dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/gas_station_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:ems="1"
+                android:src="@drawable/location_pin" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/accident_station_text"
+                android:layout_toRightOf="@+id/gas_station_img"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textSize="20dp"
+                android:textColor="#333333"
+                android:hint="사고 장소를 입력하세요."
+
+                android:layout_marginTop="25dp"
+                />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_marginTop="33dp"
+                android:layout_below="@id/gas_station_img"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#A4A4A4"
+                />
+            <ImageView
+                android:id="@+id/service_update_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:ems="1"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/image"
+                android:layout_below="@+id/line1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service_update_text"
+                android:layout_toRightOf="@+id/service_update_img"
+                android:text=" 사고 사진 "
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:layout_marginTop="7dp"
+                android:layout_below="@+id/line1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/service_update_addText"
+                android:layout_toRightOf="@+id/service_update_img"
+                android:text="사고 사진을 추가해주세요."
+                android:layout_marginLeft="18dp"
+                android:textSize="18dp"
+                android:layout_marginTop="3dp"
+                android:layout_below="@+id/service_update_text"
+                />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/service_update_img"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:background="#ffffff"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_image" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/service_update_img"
+                android:layout_toRightOf="@+id/image1"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/add_image"/>
+
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="130dp"
+                android:layout_below="@+id/service_update_addText"
+                android:background="#A4A4A4"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/memo"
+                android:id="@+id/memo_img"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"/>
+
+            <EditText
+                android:id="@+id/memo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="메모, 특이사항
+            (250자 이내, 이모티콘 불가)
+"
+                android:ems="10"
+                android:layout_toRightOf="@+id/memo_img"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gas_station_text"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="68dp"
+                android:text="위치 변경" />
+
+            <ImageButton
+                android:id="@+id/location_arrow"
+                android:layout_width="20dp"
+                android:layout_height="23dp"
+                android:layout_below="@+id/gas_station_text"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/a"
+
+
+                />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

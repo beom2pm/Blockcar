@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: noman.placesapi:placesAPI:1.1.3@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ede3c4490ca74c1641d8af12d57cda1f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/ede3c4490ca74c1641d8af12d57cda1f/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/noman.placesapi/placesAPI/1.1.3/5471a4a093c9b8aabccc81f2215f67176ce13d67/placesAPI-1.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
